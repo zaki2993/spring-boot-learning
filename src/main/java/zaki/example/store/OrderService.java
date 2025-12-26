@@ -9,7 +9,7 @@ public class OrderService{
     private PaymentService paymentService;
     public OrderService(){}
     @Autowired
-    public OrderService(@Qualifier("paypal") PaymentService paymentService){
+    public OrderService( PaymentService paymentService){
         this.paymentService=paymentService;
     }
     public void process(){

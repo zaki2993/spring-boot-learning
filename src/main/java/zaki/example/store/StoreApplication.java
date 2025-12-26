@@ -12,12 +12,12 @@ public class StoreApplication {
         var context = SpringApplication.run(StoreApplication.class, args);
         
         // Get the bean (Make sure OrderService uses @Qualifier("paypal") inside!)
-        // var orderService = context.getBean(OrderService.class);
+        var orderService = context.getBean(OrderService.class);
         // 
-        // orderService.process();
+        orderService.process();
 
-        var notificationmanager = context.getBean(NotificationManager.class);
-        notificationmanager.manageMessage();
+        // var notificationmanager = context.getBean(NotificationManager.class);
+        // notificationmanager.manageMessage();
         
 
 
