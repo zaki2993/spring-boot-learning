@@ -15,6 +15,7 @@ public class StoreApplication {
         var orderService = context.getBean(OrderService.class);
         // 
         orderService.process();
+        // var res = context.getBean(HavyResources.class);
 
         // var notificationmanager = context.getBean(NotificationManager.class);
         // notificationmanager.manageMessage();

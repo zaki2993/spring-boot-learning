@@ -18,7 +18,6 @@ public class AppConfig{
     }
     @Bean
     public OrderService orderService(){
-        System.out.println("kdkkddk :"+paymentService);
         if(paymentService.equals("paypal")){
             return new OrderService(paypal());
         }
