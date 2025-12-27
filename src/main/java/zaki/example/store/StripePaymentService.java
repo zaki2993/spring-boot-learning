@@ -14,8 +14,11 @@ public class StripePaymentService implements PaymentService{
     private boolean stripeEnabled;
     @Value("${stripe.supported-currencies}")
     private List<String> stripeSupportedCurrency;
+    @Value("${test.ps}")
+    private int ts;
     @Override
     public void process(double amount){
+        System.out.println("testing: "+ts);
         System.out.println("Stripe");
         System.out.println("amount: "+amount);
         System.out.println("url: "+stripeUrl);

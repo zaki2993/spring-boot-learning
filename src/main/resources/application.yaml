@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: store
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true
+    username: root
+    password: password
+stripe:
+  url: https://api.stripe.com
+  enabled: true
+  supported-currencies: USD,MDH,EUR
+payment:
+  type: stripe
+test:
+  ps: 33
+

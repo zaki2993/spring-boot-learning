@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class AppConfig{
-    @Value("${payment-type}")
+    @Value("${payment.type}")
     private String paymentService; 
     @Bean
     public StripePaymentService stripe(){
