@@ -11,7 +11,7 @@ public class StoreApplication {
     public static void main(String[] args) {
         // Use 'var' so you don't worry about imports
         // ConfigurableApplicationContext context = SpringApplication.run(StoreApplication.class, args);
-        var context = SpringApplication.run(StoreApplication.class, args);
+        // var context = SpringApplication.run(StoreApplication.class, args);
         
         // Get the bean (Make sure OrderService uses @Qualifier("paypal") inside!)
         // var orderService = context.getBean(OrderService.class);
@@ -23,7 +23,7 @@ public class StoreApplication {
 
         // var notificationmanager = context.getBean(NotificationManager.class);
         // notificationmanager.manageMessage();
-        context.close();
+        // context.close();
 
     }
 }
